@@ -65,6 +65,17 @@ header{border-bottom:0;padding:28px 5vw 12px}header h1{font-size:24px;letter-spa
 .exploded-body-visual:before{display:none}
 
 .platform-logo{width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;border-radius:11px;background:#111;flex-shrink:0;vertical-align:middle}.platform-logo svg{width:30px;height:30px}.platform-logo.instagram{background:linear-gradient(35deg,#F9CE34,#EE2A7B 45%,#6228D7)}.platform-logo.youtube{background:#FF0033}.platform-logo.facebook{background:#1877F2}.platform-logo.linkedin{background:#0A66C2}#factory-accounts .media-card{position:relative;padding-top:25px}#factory-accounts .media-card>.platform-logo{display:flex;margin-bottom:16px;width:48px;height:48px;border-radius:13px}#factory-accounts .media-card>.tag{position:absolute;top:30px;left:86px;max-width:calc(100% - 107px);line-height:1.5}.social-links .platform-logo{width:27px;height:27px;border-radius:7px}.social-links .platform-logo svg{width:21px;height:21px}.platform-row>span{display:flex;gap:8px;align-items:center}.platform-row .platform-logo{width:25px;height:25px;border-radius:6px}.platform-row .platform-logo svg{width:20px;height:20px}
+
+/* Clear current chapter, without moving adjacent navigation items. */
+.chapter-nav button{transition:background .22s ease,box-shadow .22s ease,color .22s ease;isolation:isolate}
+.chapter-nav button.active:not(.home-entry){background:#dcecef;border-radius:16px;box-shadow:inset 0 0 0 1px #a6ced2,0 7px 18px #31587014;color:#006f73}
+.chapter-nav button.active:not(.home-entry) svg{transform:scale(1.22) translateY(-3px);transform-origin:center;filter:drop-shadow(0 3px 3px #007f8114)}
+.chapter-nav button.active:not(.home-entry) strong{transform:scale(1.12);font-weight:750;color:#006f73}
+.chapter-nav button.active:not(.home-entry) span{color:#007f81;font-weight:700;opacity:1}
+.chapter-nav button.active:not(.home-entry):after{width:38px;height:4px;bottom:-8px;background:#007f81}
+.chapter-nav button strong{transition:transform .22s ease,color .22s ease}
+@media(prefers-reduced-motion:reduce){.chapter-nav button,.chapter-nav button svg,.chapter-nav button strong{transition:none}}
+
 </style></head>
 <body>
 <header><div><div class="eyebrow">JUNCHENG / NORTH AMERICA</div><h1>钧骋 · 北美业务拓展作战图</h1></div><div class="header-right"><div class="date">决策汇报 / 2026.10.12<br>公开证据 · 产品匹配 · 试单路径</div><button class="ghost" id="present">演示模式 ⛶</button></div></header>
